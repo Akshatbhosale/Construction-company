@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Flat - XYZ Construction</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Book Your Flat</h2>
+    <p>Fill in the details below to book </p>
+    <form id="bookingForm">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required />
+      </div>
+
+      <div class="form-group">
+        <label for="flatType">Type of Flat</label>
+        <select id="flatType" name="flatType" required>
+          <option value="1BHK">1 BHK</option>
+          <option value="2BHK">2 BHK</option>
+          <option value="3BHK">3 BHK</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="budget">Budget</label>
+        <input type="number" id="budget" name="budget" required min="100000" />
+      </div>
+
+      <div class="form-group">
+        <label for="moveInDate">Preferred Move-in Date</label>
+        <input type="date" id="moveInDate" name="moveInDate" required />
+      </div>
+
+      <button type="submit">Submit Booking</button>
+    </form>
+  </div>
+</body>
+</html>
